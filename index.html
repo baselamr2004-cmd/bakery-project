@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Family Bakery</title>
+</head>
+
+
+<script>
+    window.addEventListener('scroll', function() {
+        var header = document.querySelector('.main-header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+
+<body>
+
+    
+    <header class="main-header">
+        <div class="logo">
+          <img src="bakery-logo.png">
+            
+        </div>
+
+        <!-- Semantic Element: nav -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#offer">Our Offer</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Semantic Element: main -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <p class="welcome">Welcome to</p>
+                <h1 class="typing">Family Bakery</h1>
+                <p class="hero-desc">
+                    We're the biggest, best equipped and most advanced Bakery in the greater
+                    Los Angeles area.
+                </p>
+                <button class="btn btn-fill">Learn More</button>
+                <button class="btn btn-outline">Contact us</button>
+            </div>
+            <div class="scroll-down">
+                <i class="fa-solid fa-computer-mouse"></i>
+            </div>
+        </section>
+
+        <!-- Semantic Element: section - Who We Are -->
+        <section id="about" class="who-we-are">
+            <img src="bread1.jpg" alt="Fresh baked bread">
+            <div class="who-text">
+                <h2>Who we are?</h2>
+                <p>
+                    We have been operating for over 30 years and are Members of The Federation of
+                    Master Builders. We work on projects big and small from small residential extensions
+                    to full house. We are so happy with this theme. Everyday it make our lives better.
+                </p>
+                <div class="feature-list">
+    <div><i class="fa-solid fa-leaf"></i></div>
+    <p>We care about environment.</p>
+    <div><i class="fa-solid fa-people-group"></i></div>
+    <p>We are trusted by hundreds of clients.</p>
+    <div><i class="fa-solid fa-heart"></i></div>
+    <p>Social media loves us!</p>
+    <div><i class="fa-solid fa-check"></i></div>
+    <p>This list is super easy to create.</p>
+     </div>
+            </div>
+        </section>
+
+        <!-- Our Location -->
+        <section class="our-location">
+            <div class="location-text">
+                <h2>Our Location</h2>
+                <p>
+                    We have been operating for over 30 years and are Members of The Federation of
+                    Master Builders. We work on projects big and small from small residential extensions
+                    to full house. We are so happy with this theme. Everyday it make our lives better.
+                </p>
+                <p>
+                    Story on projects big and small from small residential extensions to full house.
+                    We are so happy with this theme. Everyday it make our lives better.
+                </p>
+            </div>
+            <img src="our location.jpg" alt="Inside the bakery shop">
+        </section>
+
+        <!-- Our Baking -->
+        <section id="offer" class="our-baking">
+            <h2>Our Baking</h2>
+            <p class="sub-title">Learn more about them. We have worked truly hard to make them perfect for every use.</p>
+
+            <div class="cards">
+                <!-- Semantic Element: article -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500" alt="Superior Breads">
+                    <h3>Superior Breads</h3>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit.</p>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500" alt="Bagels">
+                    <h3>Bagels</h3>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit.</p>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500" alt="Cookies">
+                    <h3>Cookies</h3>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section id="contact" class="contact-info">
+            <div class="contact-text">
+                <h2>Contact Information</h2>
+                <p>
+                    I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                </p>
+                <p class="our-details-title">Our contact details:</p>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Manchester St 123-78B, Random 713, UK</li>
+                    <li><i class="fa-solid fa-phone"></i> +46 123 456 789</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> +37 431 456 789</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@sitename.com</li>
+                </ul>
+            </div>
+            <div class="map-wrap">
+                <iframe
+                    src="https://maps.google.com/maps?q=Manchester%20Road&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Semantic Element: footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <h3>About us</h3>
+                <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet.</p>
+                <p>We are the champions of all time, yeah.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Why we are special?</h3>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> Our magical recipe.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> We care about environment.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Trusted by hundreds of clients.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Social media loves us!</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Super easy to create.</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> Monday 10AM - 9PM</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Tuesday 10AM - 9PM</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Wednesday 10AM - 9PM</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Thursday 10AM - 10PM</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Friday 10AM - 10PM</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Weekends 10AM - 11PM</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Details</h3>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Manchester Road 123-78B, UK</li>
+                    <li><i class="fa-solid fa-phone"></i> +46 123 456 789</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@sitename.com</li>
+                    <li><i class="fa-solid fa-globe"></i> http://www.sitename.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="bakery-logo.png" alt="">
+            </div>
+            <p>Copyright 2017. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
