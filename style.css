@@ -83,7 +83,7 @@ ul {
             }
    }
    .logo img{
-
+        content: url("logo\ 2.png");
    }
 
 }
