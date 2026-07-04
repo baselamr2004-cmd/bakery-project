@@ -101,7 +101,7 @@ ul {
     align-items: center;
     justify-content: center;
 
-    /* linear-gradient overlay بدل ::before */
+    
     &::before {
         content: "";
         position: absolute;
@@ -115,7 +115,7 @@ ul {
     }
 
     .hero-text {
-        position: relative; /* عشان يطلع فوق الـ overlay */
+        position: relative;
         text-align: center;
         color: var(--white);
         max-width: 800px;
@@ -131,7 +131,7 @@ ul {
         h1 {
             font-family: Georgia, serif;
             font-size: calc(2rem + 3vw);
-            /* typing animation */
+            
             display:inline;
             overflow: hidden;
   
@@ -235,7 +235,7 @@ ul {
     align-items: center;
     gap: 60px;
     padding: 80px 60px;
-    /* radial-gradient للخلفية */
+    
     background: radial-gradient(ellipse at center, #ffffff 60%, #f0ece4 100%);
 
     .location-text {
